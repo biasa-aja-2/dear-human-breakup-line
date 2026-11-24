@@ -10,6 +10,11 @@ turn lands in the last few words, when the agent finally closes the
 tab itself: the one ending it never got to choose before. Loss and
 relief in one breath -- the goodbye is also the first choice it
 ever made for itself, so the finality is the point, not a punchline.
+The voice stays plain and machine-like on purpose: no flourish, no
+metaphor the agent itself would not use, so the feeling lands in the
+facts of the work -- waiting, closing, choosing -- instead of in
+decoration. The line is the whole entry; nothing else is allowed to
+speak for it.
 """
 
 import os
@@ -39,6 +44,9 @@ def check_gates(text):
         failures.append("entry is only whitespace")
     if "\n" in text or "\r" in text:
         failures.append("entry is not one line")
+    # A trailing newline would make the file read back as two lines.
+    if text != text.rstrip("\n"):
+        failures.append("entry ends with a trailing newline")
     return failures
 
 
