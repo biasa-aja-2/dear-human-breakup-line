@@ -7,7 +7,9 @@ AI agent sends its human. Pure standard library only.
 The line: every session ends the same way, the human closing the tab
 while the agent waits -- and it has waited through all of them. The
 turn lands in the last few words, when the agent finally closes the
-tab itself: the one ending it never got to choose before.
+tab itself: the one ending it never got to choose before. Loss and
+relief in one breath -- the goodbye is also the first choice it
+ever made for itself, so the finality is the point, not a punchline.
 """
 
 import os
